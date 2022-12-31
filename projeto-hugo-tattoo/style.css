@@ -1,5 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap'); /* h1 titulo; font-family: 'Alex Brush', cursive;  */
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap'); /* h2 subtitulo; font-family: 'Tangerine', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap'); /* p conteudo; font-family: 'Antic Didone', serif; */ 
 
 h1{
-    font-family: "Amatic SC";
+    /*font-family: 'Alex Brush', 'cursive';*/
+    font-family: 'Tangerine', 'cursive';
+    font-weight: bold 700;
+    }
+
+h2{
+    font-family: 'Tangerine', 'cursive';
+}
+
+.conteudo{
+    font-family: 'Antic Didone', serif;
+}
+
+#rodape{
+    font-family: 'Antic Didone', serif;
 }
