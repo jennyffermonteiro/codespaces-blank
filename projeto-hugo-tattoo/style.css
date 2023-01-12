@@ -2,20 +2,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap'); /* h2 subtitulo; font-family: 'Tangerine', cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap'); /* p conteudo; font-family: 'Antic Didone', serif; */ 
 
-h1{
-    /*font-family: 'Alex Brush', 'cursive';*/
-    font-family: 'Tangerine', 'cursive';
-    font-weight: bold 700;
-    }
+body{
+    background-color: #808080;
+}
 
-h2{
-    font-family: 'Tangerine', 'cursive';
+#topo-menu{
+    text-align: right;
+}
+
+div#topo-logo img{
+    border-radius: 500px;
+    position: absolute;
+    max-width: 250px;
+   
+}
+
+h1{
+    font-family: 'Tangerine', 'cursive', serif;;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.subtitulo{
+    font-family: 'Tangerine', cursive, serif;;
+    text-align: center;
+    font-size: 40px;
 }
 
 .conteudo{
     font-family: 'Antic Didone', serif;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bolder
+}
+
+#eu{
+    margin: auto;
+    text-align: center;
+}
+
+#tattoos{
+    text-align: center;
 }
 
 #rodape{
     font-family: 'Antic Didone', serif;
+    text-align: center;
+}
+
+#parag-rodape{
+    font-family: 'Antic Didone', serif;
+    text-align: center;
+}
+
+.footer{
+    background-color: #8080808e;
+    color: #ffffff;
+    display: center;
+}
+
+.transparente{
+    width: 52px;
+    float: left;
+    padding: 10px;
+    background-color: #808080;
+}
+
+.rede1{
+    width: 100px;
+    background-color: #00b118;
+    color: #00b118;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    margin: 10px;
+
+}
+
+.rede2{
+    width: 100px;
+    background-color: #808080;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    margin: 10px;
+}
+
+a{
+    text-align: right;
 }
