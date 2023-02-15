@@ -7,7 +7,8 @@ body{
     height: 100vh;
     padding: 0;
     margin: 0;
-    background: linear-gradient(72deg, #ece8e8 1%, #555557 99%);
+    background-color: #d8d5d5;
+   
 }
 
 #topo-menu{
@@ -23,8 +24,12 @@ body{
     font-weight: bold;
     font-family: sans-serif;
     transition: transform 0.5s;
-    max-width: 400px;
+    border: 2px solid  #353333;
+    border-radius: 7px;
+    padding: 6px;
+
     
+        
 }
 
 #topo-menu a:hover{
@@ -38,90 +43,31 @@ div#topo-logo img{
     margin-left: 10px;
 }
 
+#titulo1{
+    max-width: 300px;
+}
+
 h1{
     font-family: 'Tangerine', 'cursive', serif;;
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     font-size: 4em;
     font-weight: 700;
 }
 
-#titulo1{
-    max-width: 300px;
-
-}
-
-.subtitulo{
-    font-family: 'Tangerine', cursive, serif;;
+#eu{
     text-align: center;
-    font-size: 50px;
-    margin: 30px;
+    margin-bottom: 70px;
 }
 
 .conteudo{
-    font-family: 'Antic Didone', serif;
+    font-family: 'Antic Didone', sans-serif;
     text-align: center;
     font-size: 22px;
     font-weight: bolder;
-    margin: 70px 70px;
-}
-
-#eu{
-    text-align: center;
-}
-
-#tattoos{
-    text-align: center;
-}
-
-#rodape{
-    font-family: 'Antic Didone', serif;
-    text-align: center;
-}
-
-#parag-rodape{
-    font-family: 'Antic Didone', serif;
-    text-align: center;
-}
-
-.footer{
-    color: #ffffff;
-    display: center;
-}
-
-.transparente{
-    width: 52px;
-    float: left;
-    padding: 10px;
-}
-
-.rede1{
-    width: 100px;
-    background-color: #00b118;
-    color: #00b118;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    text-align: right;
-    margin: 10px;
-
-}
-
-.rede2{
-    width: 100px;
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    text-align: right;
-    margin: 10px;
-}
-
-a{
-    text-align: right;
+    
+    
 }
 
 .content{
@@ -129,10 +75,10 @@ a{
     width: 935px;
     border-radius: 20px;
     overflow: hidden;
-    
-    
+    position: relative;
+    left: 18%;
+    right: 20%;
 
-    
 }
 
 .navigation{
@@ -197,4 +143,27 @@ input{
 
 #slide5:checked ~ .s1{
     margin-left: -80%;
+}
+
+.whats{
+    width: 230px;
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+}
+
+.social{
+    display:flex;
+    flex-direction: column;
+}
+
+.insta{
+    width: 100px;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    margin: 10px;
 }
