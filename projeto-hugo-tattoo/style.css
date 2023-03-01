@@ -8,7 +8,6 @@ body{
     padding: 0;
     margin: 0;
     background-color: #d8d5d5;
-   
 }
 
 #topo-menu{
@@ -17,29 +16,32 @@ body{
 }
 
 #topo-menu a{
-    margin:10px;
-    margin-right: 10px;
+    margin-right: 25px;
     color: #000000;
     text-decoration: none;
     font-weight: bold;
     font-family: sans-serif;
-    transition: transform 0.5s;
+    transition: trasnform 0.5s;
     border: 2px solid  #353333;
     border-radius: 7px;
-    padding: 6px;
-
-    
-        
+    padding: 6px;  
 }
 
 #topo-menu a:hover{
     transform: scale(1.10);
 }
 
+#topo-menu .insta{
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, rgb(19, 0, 128), lightblue);
+    border-image-slice: 1;
+    border-radius: 7px;
+}
+
 div#topo-logo img{
     border-radius: 500px;
     position: absolute;
-    max-width: 250px;
+    max-width: 250px;   
     margin-left: 10px;
 }
 
@@ -54,7 +56,15 @@ h1{
     padding-bottom: 30px;
     font-size: 4em;
     font-weight: 700;
+    max-width: 100%;
+    margin: auto;
 }
+
+@media screen and (max-width: 600px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
 
 #eu{
     text-align: center;
@@ -66,18 +76,16 @@ h1{
     text-align: center;
     font-size: 22px;
     font-weight: bolder;
-    
-    
+        
 }
 
 .content{
     height: 520px;
-    width: 935px;
+    max-width: 935px;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    left: 18%;
-    right: 20%;
+    margin: auto;
 
 }
 
@@ -146,7 +154,7 @@ input{
 }
 
 .whats{
-    width: 230px;
+    width: 200px;
     position: fixed;
     bottom: 10px;
     left: 5px;
@@ -157,13 +165,26 @@ input{
     flex-direction: column;
 }
 
-.insta{
-    width: 100px;
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
+.dev{
+    bottom: 10px;
+    right: 5px;
+    display:flex;
+    justify-content: center;
     align-items: center;
-    text-align: right;
-    margin: 10px;
+}
+
+.dev a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid lightgrey;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.eu{
+    text-decoration: none;
+    border-bottom: 2px solid blue;
+    cursor: pointer;
+    font-family: sans-serif;
+
 }
