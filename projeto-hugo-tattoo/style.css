@@ -8,40 +8,34 @@ body{
     padding: 0;
     margin: 0;
     background-color: #d8d5d5;
+    overflow: hidden;
 }
 
 #topo-menu{
     text-align: right;
     margin: 10px;
+    max-width: 100%;
+    margin-top: 13px;
 }
 
 #topo-menu a{
     margin-right: 25px;
     color: #000000;
     text-decoration: none;
-    font-weight: bold;
-    font-family: sans-serif;
-    transition: trasnform 0.5s;
+    font-family: 'Antic Didone', serif;
+    font-weight: 600;
     border: 2px solid  #353333;
     border-radius: 7px;
     padding: 6px;  
-}
-
-#topo-menu a:hover{
-    transform: scale(1.10);
-}
-
-#topo-menu .insta{
-    border: 3px solid transparent;
-    border-image: linear-gradient(to right, rgb(19, 0, 128), lightblue);
-    border-image-slice: 1;
-    border-radius: 7px;
+    
+    
 }
 
 div#topo-logo img{
     border-radius: 500px;
     position: absolute;
-    max-width: 250px;   
+    max-width: 80px;   
+    width: 100%;
     margin-left: 10px;
 }
 
@@ -57,12 +51,13 @@ h1{
     font-size: 4em;
     font-weight: 700;
     max-width: 100%;
+    width: 300px;
     margin: auto;
 }
 
 @media screen and (max-width: 600px) {
     h1 {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
     }
   }
 
@@ -76,16 +71,25 @@ h1{
     text-align: center;
     font-size: 22px;
     font-weight: bolder;
+    text-align: justify;
+    margin: 10px;
         
 }
 
+@media screen and (max-width: 600px) {
+    .conteudo {
+      font-size: 1.0rem;
+    }
+  }
+
 .content{
-    height: 520px;
-    max-width: 935px;
+    height: 280px;
+    max-width: 400px;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
     margin: auto;
+    box-shadow: 1px 1px #00000069;
 
 }
 
@@ -100,8 +104,8 @@ h1{
 }
 
 .bar{
-    width: 70px;
-    height: 17px;
+    width: 35px;
+    height: 15px;
     border: 2px solid #ffffff;
     margin: 5px;
     border-radius: 5px;
@@ -154,10 +158,15 @@ input{
 }
 
 .whats{
-    width: 200px;
+    width: 150px;
     position: fixed;
-    bottom: 10px;
-    left: 5px;
+    height: 50px;
+    margin: 10px;
+    
+}
+
+.pq{
+    width: 30px;
 }
 
 .social{
@@ -173,18 +182,24 @@ input{
     align-items: center;
 }
 
-.dev a{
-    text-decoration: none;
-    color: black;
-    border: 2px solid lightgrey;
-    cursor: pointer;
-    font-family: sans-serif;
-}
-
 .eu{
     text-decoration: none;
     border-bottom: 2px solid blue;
     cursor: pointer;
     font-family: sans-serif;
+    font-size: 10px;
+    max-width: 800px;
+}
 
+.sublinhado{
+    border-bottom: 2px solid blue;
+    padding: 2px;
+}
+
+.dev a:visited{
+    text-decoration: none;
+    color: black;
+    border: 2px solid lightgrey;
+    cursor: pointer;
+    font-family: sans-serif;
 }
