@@ -34,33 +34,27 @@ header > nav > ul{
 
 header > nav > ul > li{
     display: inline-block;
-    padding: 10px;
+    padding: 7px;
     margin: 2px;
     align-items: center;
     color: white;
-    background-color: #add8e6;
+    background-color: #283438;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
-header > nav > ul > li > a{
+header > nav > ul > li a{
     text-decoration: none;
-    color: white;
-    background-color: #23434e;
-
+    color:white;
 }
 
 header > nav > ul > li:hover{
-    background-color: #ffffff;
-    color:lightblue;
+    background-color: #050505;
+    color:white;
+    transition: 0.4s;
 }
 
-header > nav > ul > li a:hover{
-    background-color: #ffffff;
-    color:lightblue;
-    text-decoration: none;
-}
 
 header > nav > ul > li a:visited{
     background-color: #add8e6;
@@ -70,8 +64,7 @@ header > nav > ul > li a:visited{
 }
 
 h1{
-    background-color: #23434e;
-    color: white; 
+    color:#050505; 
     margin:10px auto;
     text-align: center;
     margin: 10px;
@@ -80,7 +73,7 @@ h1{
 }
 
 #conteudo-principal{
-    width: 600px;
+    max-width: 600px;
     display: block;
     margin: auto;
     margin-top: 15px;
@@ -203,17 +196,18 @@ img{
     font-family: sans-serif;
 }
 
-/*@media screen and (min-width:490px){
+@media screen and (min-width:320px){
     .container-tatto{
         display: block;
     }
 
     .container-tatto img{
-        width: 220px;
+        width: 180px;
     }
 
-    p{
-        width: 450px;
+    #conteudo-principal{
+        width: 380px;
+        font-size: 1.1em;
     }
 
-}*/
+}
