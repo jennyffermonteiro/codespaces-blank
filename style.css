@@ -13,54 +13,35 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: Arial, Helvetica, sans-serif; 
+    color: white;
 }
 
 body{
     background-color: var(--cor-de-fundo-site);
+   
 }
 
-
-header{
-    background-color: #23434e;
-    margin: 5px 10px;
+main{
+    max-width: 1000px;
+    background-color: #8b8b8b;
+    margin: 0 auto;
+    padding-bottom: 100px;
 }
 
-header > nav > ul{
-    list-style-type: none;
-    background-color:c;
-    padding: 3px;
-}
-
-header > nav > ul > li{
-    display: inline-block;
-    padding: 7px;
-    margin: 2px;
+.container{
+    display: flex;
     align-items: center;
-    color: white;
-    background-color: #283438;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 8px;
+    justify-content: center;
+    text-align: center;
 }
 
-header > nav > ul > li a{
-    text-decoration: none;
-    color:white;
-}
+.logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 30px;
 
-header > nav > ul > li:hover{
-    background-color: #050505;
-    color:white;
-    transition: 0.4s;
-}
-
-
-header > nav > ul > li a:visited{
-    background-color: #add8e6;
-    color:white;
-    text-decoration: none;  
-       
 }
 
 h1{
@@ -69,12 +50,16 @@ h1{
     text-align: center;
     margin: 10px;
     font-family: var(--fonte-titulo);
-    font-size: 4.0em;
+    font-size: 3.5em;
+    background-color: #8b8b8b;
+    max-width: 800px;
 }
+
+
 
 #conteudo-principal{
     max-width: 600px;
-    display: block;
+    display:block;
     margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -113,35 +98,11 @@ h1{
     
 }
 
-.tatuadores{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    margin: 0 80px;
-    padding: 10px;
-
-}
-
-.tatuadores img{
-    width: 200px;
-    height: 200px;
-    margin: 5px 10px;
-    border-radius: 10px;
-    align-items: center;
-}
-
-.tatuadores p{
-    justify-content: center;
-    align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-}
 
 h2{
-    background-color: #23434e;
-    color: white;
-    margin: 10px auto;
+    background-color: #8b8b8b;
+    color: black;
+    margin: 15px auto;
     margin-left: 10px;
     margin-right: 10px;
     text-indent: 8px;
@@ -152,6 +113,7 @@ h2{
 }
 
 .container-tatto{
+    max-width: 700px;
     display: flex;
     margin: auto;
     padding: 10px;
@@ -159,9 +121,16 @@ h2{
     justify-content: center;
 }
 
+.flexwrap{
+    flex-wrap: wrap;
+}
+
+
 img{
-    width: 300px;
-    margin-left: 10px;
+    width: 180px;
+    height: 280px;
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
 
 .container-dev{
@@ -188,6 +157,7 @@ img{
     padding: 2px;
 }
 
+
 .container-dev a:visited{
     text-decoration: none;
     color: black;
@@ -196,18 +166,27 @@ img{
     font-family: sans-serif;
 }
 
-@media screen and (min-width:320px){
-    .container-tatto{
+@media (max-width: 500px) {
+    .container-tatto {
         display: block;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+   
+        
     }
 
     .container-tatto img{
-        width: 180px;
+        width: 150px;
+        height: 180px;
+    }
+
+    h1{
+        font-size: 3.0em;
     }
 
     #conteudo-principal{
-        width: 380px;
         font-size: 1.1em;
     }
 
-}
+  }
