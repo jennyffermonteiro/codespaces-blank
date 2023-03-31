@@ -18,15 +18,16 @@
 }
 
 body{
-    background-color: var(--cor-de-fundo-site);
+    background-color: black;
    
 }
 
 main{
     max-width: 1000px;
-    background-color: #8b8b8b;
+    background-color: black;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 70px;
 }
 
 .container{
@@ -37,32 +38,36 @@ main{
 }
 
 .logo{
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin: 30px;
 
 }
 
 h1{
-    color:#050505; 
+    color:white; 
     margin:10px auto;
     text-align: center;
     margin: 10px;
     font-family: var(--fonte-titulo);
-    font-size: 3.5em;
-    background-color: #8b8b8b;
-    max-width: 800px;
+    font-size: 4.0em;
+    /*background-color: #8b8b8b;*/
+    max-width: 1000px;
+    display: inline-block;
 }
 
-
+.two-color{
+    color:#061da1; 
+    font-family: var(--fonte-titulo);
+}
 
 #conteudo-principal{
     max-width: 600px;
     display:block;
     margin: auto;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     text-align: center;
     font-size: 1.2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -74,9 +79,9 @@ h1{
     justify-content: center;
     max-width: 600px;
     width: 100%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 
 }
 
@@ -87,9 +92,10 @@ h1{
     font-size: 20px;
     background-color: red;
     color: white;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     cursor: pointer;
+
 }
 
 .orçamento a:hover{
@@ -98,17 +104,14 @@ h1{
     
 }
 
-
 h2{
-    background-color: #8b8b8b;
-    color: black;
+    background-color: black;
+    color: white;
     margin: 15px auto;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-indent: 8px;
+    margin: 80px 20px 25px 0;
     text-align: center;
     font-family: var(--fonte-subtitulo);
-    font-size: 3.0em;
+    font-size: 2.5em;
 
 }
 
@@ -117,8 +120,10 @@ h2{
     display: flex;
     margin: auto;
     padding: 10px;
+    padding-left: 30px;
     align-items: center;
     justify-content: center;
+    
 }
 
 .flexwrap{
@@ -127,10 +132,62 @@ h2{
 
 
 img{
-    width: 180px;
+    width: 200px;
     height: 280px;
     margin-left: 15px;
     margin-bottom: 10px;
+}
+
+.insta{
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 30px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.insta a {
+
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    background-color: #061da1;
+    color: white;
+    padding: 20px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.insta a:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+.contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+iframe{
+    max-width: 700px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icon{
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
 }
 
 .container-dev{
@@ -138,18 +195,19 @@ img{
     display:flex;
     justify-content: center;
     align-items: center;
+    font-size: 10px;
 }
 
 .container-dev a{
     text-decoration: none;
 }
 
-#linkedin{
+.container-dev a:visited{
     text-decoration: none;
+    color: white;
+    border: 2px solid lightgrey;
     cursor: pointer;
     font-family: sans-serif;
-    font-size: 10px;
-    max-width: 800px;
 }
 
 .sublinhado{
@@ -158,13 +216,7 @@ img{
 }
 
 
-.container-dev a:visited{
-    text-decoration: none;
-    color: black;
-    border: 2px solid lightgrey;
-    cursor: pointer;
-    font-family: sans-serif;
-}
+
 
 @media (max-width: 500px) {
     .container-tatto {
@@ -182,11 +234,17 @@ img{
     }
 
     h1{
-        font-size: 3.0em;
+        font-size: 2.8em;
+        margin-left: 30px;
     }
 
     #conteudo-principal{
         font-size: 1.1em;
+    }
+
+    iframe{
+        width: 280px;
+        height: 200px;
     }
 
   }
